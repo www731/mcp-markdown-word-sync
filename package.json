@@ -8,7 +8,8 @@
   "types": "dist/index.d.ts",
   "bin": {
     "mdsync": "./dist/cli/index.js",
-    "markdown-sync": "./dist/cli/index.js"
+    "markdown-sync": "./dist/cli/index.js",
+    "mdsync-mcp": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",

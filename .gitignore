@@ -16,11 +16,9 @@ Thumbs.db
 .idea/
 .vscode/
 *.tsbuildinfo
-demo/*.docx
-demo/*.pdf
-demo/*.html
-demo/*.pending
+demo/
 *.pending
 tmp/
 temp/
 .cache/
+MCP Markdown-Word 双向同步.md
