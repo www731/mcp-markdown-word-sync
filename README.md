@@ -80,23 +80,22 @@
     - [platformUtils.ts](file:///d:/projects/mdMCP/src/services/appLauncher/platformUtils.ts)
     - [appConfig.ts](file:///d:/projects/mdMCP/src/services/appLauncher/appConfig.ts)
 
-## 使用建议
-- 开启自动保存
-  - VS Code：`files.autoSave = afterDelay`、`files.autoSaveDelay ≈ 800ms`
-  - Word/WPS：开启 AutoSave（365）或缩短自动保存间隔
-- Windows 下如果遇到 `spawn winword ENOENT`
-  - 说明系统 PATH 未找到 Word；本项目会自动回退到 `start`/默认关联应用
-- DOCX 写锁导致的 EBUSY
-  - 已实现重试与 `.pending` 回退；等待解锁或再次保存即可正常写入
+## Usage Tips
+- Enable auto-save
+  - VS Code: `files.autoSave = afterDelay`, `files.autoSaveDelay ≈ 800ms`
+  - Word/WPS: turn on AutoSave (365) or shorten the auto-save interval
+- On Windows, if you encounter `spawn winword ENOENT`
+  - it means Word is not found in system PATH; the project will automatically fall back to `start`/default associated app
+- EBUSY caused by DOCX write-lock
+  - retry and `.pending` fallback are implemented; wait for unlock or save again to write successfully
 
-## 常见命令
-- 构建：`npm run build`
-- 类型检查：`npm run typecheck`
-- 启动 MCP 服务器（本地测试）：
-  - PowerShell：`$env:MCP_TRANSPORT='stdio'; node dist/index.js`
-  - 或 `mdsync-mcp`（需 `npm link`）
-- 启动 CLI 同步：
-  - `node dist/cli/index.js sync <文件> --open --prefer-word`
-
+## Common Commands
+- Build: `npm run build`
+- Type-check: `npm run typecheck`
+- Start MCP server (local test):
+  - PowerShell: `$env:MCP_TRANSPORT='stdio'; node dist/index.js`
+  - or `mdsync-mcp` (requires `npm link`)
+- Start CLI sync:
+  - `node dist/cli/index.js sync <file> --open --prefer-word`
 
 
