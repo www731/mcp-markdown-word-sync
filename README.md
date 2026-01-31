@@ -71,10 +71,9 @@
 - Key files
   - CLI entry: [src/cli/index.ts](file:///d:/projects/mdMCP/src/cli/index.ts)
   - MCP server: [src/mcp/server.ts](file:///d:/projects/mdMCP/src/mcp/server.ts)
-  - MCP服务器：[src/mcp/server.ts](file:///d:/projects/mdMCP/src/mcp/server.ts)
-  - 同步引擎：[src/sync/syncEngine.ts](file:///d:/projects/mdMCP/src/sync/syncEngine.ts)
-  - 转换器：[src/converter/DocumentConverter.ts](file:///d:/projects/mdMCP/src/converter/DocumentConverter.ts)
-  - 打开器（模块化）：
+  - Sync engine: [src/sync/syncEngine.ts](file:///d:/projects/mdMCP/src/sync/syncEngine.ts)
+  - Converter: [src/converter/DocumentConverter.ts](file:///d:/projects/mdMCP/src/converter/DocumentConverter.ts)
+  - Opener (modular):
     - [appLauncher.ts](file:///d:/projects/mdMCP/src/services/appLauncher/appLauncher.ts)
     - [documentOpener.ts](file:///d:/projects/mdMCP/src/services/appLauncher/documentOpener.ts)
     - [platformUtils.ts](file:///d:/projects/mdMCP/src/services/appLauncher/platformUtils.ts)
